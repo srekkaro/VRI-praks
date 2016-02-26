@@ -1,2 +1,4 @@
 # VRI-praks
 VRI praktikumitöö
+
+26.02.2016- Praktikumi jaoks eraldi failide repositooriumi tekitamine. Laadisin üles praktikumiga seotud HTML-lehed ja galerii jaoks pildid koos pisipiltidega. Galerii avaleheks on hetkel gallery.html. Kasutajate registreerimine toimub register.html vahendusel. Sisselogimine login.html abil. Piltide üles laadimiseks on tehtud upload.html. Pildid avanevad view.html abil. Kõikide lehtede vahel on võimalik edasi-tagasi navigeerida menüü kaudu.
