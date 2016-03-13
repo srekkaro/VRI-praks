@@ -1,0 +1,73 @@
+body 
+	{background-color: #FFE4B5;
+	margin:0px;
+	}
+
+#MasterPealkiri 
+	{color: #DC143C;
+	text-align:center;
+	}
+
+.ymbris
+	{background-color:#FFFACD;
+	position:relative;
+	min-width: 600px;
+	max-width: 1000px;
+	margin:auto;
+	overflow:auto;
+	}
+
+div.sisu
+	{background-color: #FFFACD;
+	margin-left:25%;
+	}
+	
+div.sisu img
+	{border-style: solid;
+	}
+	
+#menu {
+	position: absolute;
+	top:100px; 
+	bottom:0px; 
+	width:15%}
+	
+#menu ul {
+	width: 100%;
+	padding: 0px;
+	}
+	
+#menu li {
+	list-style: none;
+}
+
+#menu a 
+	{text-decoration: none;
+	font-size: 150%;
+	display: inline-block;
+	width:100%;
+	padding: 4px;
+	}
+	
+#menu a:link
+	{color: #4169E1;
+	}
+
+#menu a:visited
+	{color: #00BFFF;
+	}
+
+#menu a:hover
+	{background-color: #FFFFE0;
+	border-style: dotted;
+	border-radius: 10px;
+	}
+
+#validaatorid
+	{border: none;
+	float: right;
+	}
+
+.ymbris h2
+	{text-align:center;
+}
