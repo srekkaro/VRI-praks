@@ -8,4 +8,4 @@ Galerii on nähtav aadressil: http://enos.itcollege.ee/~srekkaro/gallery.html
 
 2016.03.13- Tõstsin galerii kujunduse eraldi "styles.css" faili. Muutsin menüü kujundust. Aktiveerisin CSS kujunduse kõikidel praktikumi html-lehtedel. Laadisin uuendatud failid üles eraldi branchi: srekkaro-CSS-eraldi-failis." Galerii on nähtav aadressil: http://enos.itcollege.ee/~srekkaro/gallery.html
 
-2016.03.17- Lisasin praktikumile Javascriptis tehtud suurte piltide vaate. Täiendasin gallery.html ja styles.css faile. Lisasin skriptid.js faili
+2016.03.17- Lisasin praktikumile Javascriptis tehtud suurte piltide vaate. Täiendasin gallery.html ja styles.css faile. Lisasin skriptid.js faili. Galerii on nähtav aadressil: http://enos.itcollege.ee/~srekkaro/gallery.html
