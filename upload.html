@@ -1,0 +1,31 @@
+
+				<h3>Lae uus pilt &uuml;les!</h3>
+				<form action="controller.php" enctype="multipart/form-data" method="post">
+					<table>
+						<tr>
+							<td><label for="pealkiri">Pildi pealkiri: </label></td>
+							<td><input type="text" id="pealkiri" name="pealkiri" placeholder="Uue pildi nimi"/></td>
+						</tr>
+						<tr>
+							<td><label for="autor">Pildi Autor: </label></td>
+							<td><input type="text" id="autor" name="autor" placeholder="Pildi autor"/></td>
+						</tr>
+						<tr>
+							<td><label for="vpilt">Vali thumbnail: </label></td>
+							<td><input type="file" id="vpilt" name="vpilt"/></td>
+						</tr>
+						<tr>
+							<td><label for="suurpilt">Vali pilt: </label></td>
+							<td><input type="file" id="suurpilt" name="vpilt"/></td>
+						</tr>
+						<tr>
+							<td><label for="kuupaev">Pildi kuup&auml;ev: </label></td>
+							<td><input type="date" id="kuupaev" name="vpiltkuupaev"/></td>
+						<tr>
+							<td><label for="kommentaar">Lisa kirjeldus: </label></td>
+							<td><textarea id="kommentaar" name="kommentaar" cols="30" rows="5" placeholder="Kirjelda pilti!"></textarea></td>
+						</tr>
+					</table>
+					<input type="submit" value="Lae &uuml;les!"/>
+				</form>
+

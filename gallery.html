@@ -1,0 +1,30 @@
+
+				<div id="galerii">
+					<?php 
+						foreach($pildid as $pilt) { ?>
+							<a href= <?php echo $pilt['big']; ?>><img src= <?php echo $pilt['small']; ?>  alt= <?php echo $pilt['alt']; ?>/></a>
+						<?php	
+						};
+					?>
+<!--					<a href="big/florida.png"><img src="small/florida.jpg" height="100" width="150" alt="Tundmatu, florida"/></a>
+					<a href="big/kala.jpg"><img src="small/kala.jpg" height="100" width="150" alt="Tundmatu, kala"/></a>
+					<a href="big/moon.jpg"><img src="small/moon.jpg" height="100" width="150" alt="Tundamatu, moon"/></a>
+					<a href="big/network.jpg"><img src="small/network.jpg" height="100" width="150" alt="Tundmatu, network"/></a>
+					<a href="big/random12.jpg"><img src="small/random12.jpg" height="100" width="150" alt="Tundmatu, random12"/></a>
+					<a href="big/reflection.jpg"><img src="small/reflection.jpg" height="100" width="150" alt="Tundmatu, reflection"/></a>			
+					-->		
+				</div>
+			</div>	
+			<div id="hoidja" style="display:none;">
+ 				 <div id="taust"></div>
+ 				 	<div id="tabel">
+ 				   		<div id="cell">
+     				 		<div id="sulge" onclick="hideDetails();">Sulge</div>
+     						 <div id="kuva">
+       				 				<img id="suurpilt" src="big/reflection.jpg" alt="ajutine"/><br/>
+     				   				<span id="inf"></span>
+    				  		 </div>
+   					 	</div>
+ 				 </div>
+
+			
