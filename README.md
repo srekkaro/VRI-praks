@@ -9,3 +9,5 @@ Galerii on nähtav aadressil: http://enos.itcollege.ee/~srekkaro/gallery.html
 2016.03.13- Tõstsin galerii kujunduse eraldi "styles.css" faili. Muutsin menüü kujundust. Aktiveerisin CSS kujunduse kõikidel praktikumi html-lehtedel. Laadisin uuendatud failid üles eraldi branchi: srekkaro-CSS-eraldi-failis." Galerii on nähtav aadressil: http://enos.itcollege.ee/~srekkaro/gallery.html
 
 2016.03.17- Lisasin praktikumile Javascriptis tehtud suurte piltide vaate. Täiendasin gallery.html ja styles.css faile. Lisasin skriptid.js faili. Galerii on nähtav aadressil: http://enos.itcollege.ee/~srekkaro/gallery.html
+
+2016-04-10- Korrastasin failide struktuuri. Vanad HTML failid tõstsin \view\vanad kausta. Lisasin praktikumi galeriile PHP funktsionaalsuse ning tõstsin HTML lehtede päise ja jaluse eraldi failidesse "head.html" ja "foot.html."  Uued HTML failid on leitavad \view kaustas. Lisatud failid: controller.php, gallery.html, upload.html, register.html, login.html, head.html, foot.html. Galerii on nähtav aadressil http//enos.itcollege.ee/~srekkaro/controller.php. Vanad, gallery.html lehele viitav, galerii link Enoses enam ei tööta.
