@@ -1,5 +1,6 @@
 <?php
 	ini_set("display_errors", 1);
+	require_once('functions.php');
 	$pildid=array(
  		array("big"=>"big/florida.png", "small"=>"small/florida.jpg", "alt"=>"Tundmatu, florida"),
   		array("big"=>"big/kala.jpg", "small"=>"small/kala.jpg", "alt"=>"Tundmatu, kala"),
@@ -13,22 +14,19 @@
 	if (!empty($_GET['mode'])){
 		$mode=$_GET['mode'];	
 	}
-	
- 	include_once('view/head.html');
  		switch($mode) {
 		case "login":
-			include('view/login.html');
+			kuva_login();
 		break;
 		case "upload":
-			include('view/upload.html');
+			kuva_upload();
 		break;
 		case "register":
-			include('view/register.html');
+			kuva_register();
 		break;
 		default:
-			include('view/gallery.html');
+			kuva_galerii();
 		break;
 	}
- 	include_once('view/foot.html');
 
 ?>
