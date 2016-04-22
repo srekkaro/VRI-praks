@@ -1,6 +1,7 @@
 <?php
 	ini_set("display_errors", 1);
 	require_once('functions.php');
+	alusta_sessioon();
 	$pildid=array(
  		array("big"=>"big/florida.png", "small"=>"small/florida.jpg", "alt"=>"Tundmatu, florida"),
   		array("big"=>"big/kala.jpg", "small"=>"small/kala.jpg", "alt"=>"Tundmatu, kala"),
@@ -19,10 +20,13 @@
 			kuva_login();
 		break;
 		case "upload":
-			kuva_upload();
+				kuva_upload();
 		break;
 		case "register":
 			kuva_register();
+		break;
+		case "logout":
+			kuva_logout();
 		break;
 		default:
 			kuva_galerii();

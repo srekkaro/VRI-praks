@@ -12,11 +12,31 @@
 			<h2>Avaleht</h2>
 			<div>
 				<ul id="menu">
-					<li><a href="controller.php">Avaleht</a></li>
-					<li><a href="controller.php?mode=login">Logi sisse</a></li>
-					<li><a href="controller.php?mode=register">Registreeri</a></li>
-					<li><a href="controller.php?mode=upload">&Uuml;leslaadmine</a></li>
+				<?php
+					if (!isset($_SESSION['sisenemine'])) {
+						?>
+						<li><a href="controller.php">Avaleht</a></li>
+						<li><a href="controller.php?mode=login">Logi sisse</a></li>
+						<li><a href="controller.php?mode=register">Registreeri</a></li>
+						<?php
+					}
+					else {
+						?>
+						<li><a href="controller.php">Avaleht</a></li>				
+						<li><a href="controller.php?mode=upload">&Uuml;leslaadmine</a></li>
+						<li><a href="controller.php?mode=logout">Logi v&auml;lja</a></li>
+						<?php
+					}
+					?>
 				</ul>
 			</div>
 			
 			<div class="sisu">
+			<?php 
+				if (isset($_SESSION["teade"])) {
+					?> 
+					<p id="veateade"> <?php echo $_SESSION['teade'];?> </p>
+					 <?php
+					unset($_SESSION['teade']);
+				}
+			?>

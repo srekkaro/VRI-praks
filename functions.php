@@ -12,8 +12,14 @@ function kuva_login() {
 			$vead[]="Parool sisestamata!";
 		}
 		
-		if (!empty($_POST['username']) && !empty($_POST['password'])){
+		if (($_POST['username']=='kasutaja')&&($_POST['password']=='parool')) {
+			alusta_sessioon();
+			$_SESSION['sisenemine']=array();
+			$_SESSION['teade']="Sisselogimine &otilde;nnestus!";
 			header("Location: ?mode=galerii");	
+		}
+		else {
+			$vead[]="Kasutajat ei eksisteeri v&otilde;i parool oli vale!";
 		}
 	}
 	include('view/login.html');
@@ -22,7 +28,14 @@ function kuva_login() {
 	
 function kuva_upload() {
 	include_once('view/head.html');
-	include('view/upload.html');
+	if (isset($_SESSION['sisenemine'])) {
+		include('view/upload.html');
+	}
+	else {
+		global $pildid;
+		$vead[]="Piltide &uuml;leslaadimiseks pead olema sisselogitud!";
+		include('view/gallery.html');	
+	}
 	include_once('view/foot.html');
 }
 
@@ -38,5 +51,26 @@ function kuva_galerii() {
 	include('view/gallery.html');
 	include_once('view/foot.html');
 }	
+
+function kuva_logout() {
+		lopeta_sessioon();
+		global $pildid;
+		include_once('view/head.html');
+		include('view/gallery.html');
+		include_once('view/foot.html');
+}
+
+function alusta_sessioon(){
+	// siin ees võiks muuta ka sessiooni kehtivusaega, aga see pole hetkel tähtis
+	session_start();
+	}
+	
+function lopeta_sessioon(){
+	$_SESSION = array();
+	if (isset($_COOKIE[session_name()])) {
+ 	 setcookie(session_name(), '', time()-42000, '/');
+	}
+	session_destroy();
+}
 
 ?>
