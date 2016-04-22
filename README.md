@@ -13,3 +13,5 @@ Galerii on nähtav aadressil: http://enos.itcollege.ee/~srekkaro/gallery.html
 2016-04-10- Korrastasin failide struktuuri. Vanad HTML failid tõstsin \view\vanad kausta. Lisasin praktikumi galeriile PHP funktsionaalsuse ning tõstsin HTML lehtede päise ja jaluse eraldi failidesse "head.html" ja "foot.html."  Uued HTML failid on leitavad \view kaustas. Lisatud failid: controller.php, gallery.html, upload.html, register.html, login.html, head.html, foot.html. Galerii on nähtav aadressil http://enos.itcollege.ee/~srekkaro/controller.php. Vana, gallery.html lehele viitav, galerii link Enoses enam ei tööta.
 
 2016-04-14 Tekitasin eraldi functions.php faili, mille abil avatakse erinevad vaated. Täiendasin controller.php ja login.html faile. Galerii on nähtav: http://enos.itcollege.ee/~srekkaro/controller.php
+
+2016-04-22 Täiendasin praktikumi lehte sisselogimis funktsionaalsusega. Täiendaisn functions.php, controller.php, gallery.html, login.html ha head.html faile. Galerii on nähtav: http://enos.itcollege.ee/~srekkaro/controller.php
