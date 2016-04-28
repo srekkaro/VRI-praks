@@ -1,0 +1,38 @@
+#Minu kood: 10132353
+
+#1.Uue tabeli "10132353_pildid" loomine:
+
+	CREATE TABLE 10132353_pildid(
+		id INTEGER PRIMARY KEY auto_increment,
+		thumb VARCHAR(255),
+		pilt VARCHAR(255),
+		pealkiri VARCHAR(255),
+		autor VARCHAR(255),
+		punktid INTEGER
+		);
+	
+#2. Tabelisse ridade sisestamine:
+
+	INSERT INTO 10132353_pildid (thumb, pilt, pealkiri, autor, punktid) VALUES
+		('vportree.jpg', 'portree.jpg', 'Portree', 'Kunstnik1', '18'),
+		('vfoto.jpg', 'foto.jpg', 'Foto', 'Fotograaf1', '3'),
+		('vpanoraam.jpg', 'panoraam.jpg', 'Panoraam', 'Artist1', '100'),
+		('vmaal.jpg', 'maal.jpg', 'Maal', 'Maalikunstnik', '13'),
+		('vselfie.jpg', 'selfie.jpg', 'Selfie', 'Vurle1', '25'),
+		('vreidikas.jpg', 'reidikas.jpg', 'Reidikas', 'Vurle1', '33'),
+		('vorkutikas.jpg', 'orkutikas.jpg', 'Orkutikas', 'Vurle1', '11');
+
+#3. SQL päring, mis leiab tabelist pildid, mis on saanud vähem kui 50 punkti ja sorteerib tulemused punktide arvu järgi kahanevas järjekorras
+		SELECT * FROM 10132353_pildid WHERE punktid<50 ORDER BY punktid DESC;
+	
+#4. SQL päring, mis leiab tabelist autori Vurle1 kõik pildid
+		SELECT * FROM 10132353_pildid WHERE autor='Vurle1';
+	
+#5. SQL päring, mis lisab kõikidele piltidele 3 punkti.
+		UPDATE 10132353_pildid SET punktid=punktid+3;
+
+#6. SQL päring, mis leiab, mitu pilti on erinevatel autoritel (COUNT(*) ja GROUP BY autor)
+		SELECT autor, count(*) as pilte FROM 10132353_pildid GROUP BY autor;
+		
+#7. SQL päring, mis liidab kokku kui palju on süsteemis piltidele punkte antud ( SUM(...) )
+		SELECT count(*), sum(punktid) FROM 10132353_pildid;
