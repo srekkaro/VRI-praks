@@ -10,10 +10,12 @@
 								}
 							}
 						}
-					foreach($pildid as $pilt) { ?>
-							<a href= <?php echo $pilt['big']; ?>><img src= <?php echo $pilt['small']; ?>  alt= <?php echo $pilt['alt']; ?>/></a>
-						<?php	
+					if (isset ($pildid)) {
+						foreach($pildid as $picture) { ?>
+								<a href= <?php echo $picture['pilt']; ?>><img src= <?php echo $picture['thumb']; ?>  alt= <?php echo $picture['pealkiri']; ?>/></a> 
+							<?php
 						};
+				 }
 					?>
 
 				</div>

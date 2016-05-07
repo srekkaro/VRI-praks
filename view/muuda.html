@@ -1,0 +1,45 @@
+<h3>Muuda pilti!</h3>
+			<?php
+			global $tulemus;
+					if (isset($vead)) {
+							if (!empty($vead)) {
+								foreach($vead as $viga) {
+									?> <p id="veateade"> <?php
+									echo "$viga";
+									?> </p> <?php	
+								}
+							}
+					}
+				?>
+				
+			
+				<img src=<?php echo $tulemus['pilt']; ?> alt=<?php echo $tulemus['autor']; ?> />
+					
+				<form action="?mode=muuda&id=<?php echo htmlspecialchars($tulemus['id']);?>" enctype="multipart/form-data" method="post">
+					<table>
+						<tr>
+							<td><label for="pealkiri">Pildi pealkiri: </label></td>
+							<td><input type="text" id="pealkiri" name="pealkiri" value= "<?php echo htmlspecialchars($tulemus['pealkiri']); ?>"/></td>
+						</tr>
+						<tr>
+							<td><label for="autor">Pildi Autor: </label></td>
+							<td><input type="text" id="autor" name="autor" value= "<?php echo $tulemus['autor']; ?>"/></td>
+						</tr>
+						<tr>
+							<td><label for="vpilt">Vali thumbnail: </label></td>
+							<td><input type="file" id="vpilt" name="vpilt"/></td>
+						</tr>
+						<tr>
+							<td><label for="suurpilt">Vali pilt: </label></td>
+							<td><input type="file" id="suurpilt" name="vpilt"/></td>
+						</tr>
+						<tr>
+							<td><label for="kuupaev">Pildi kuup&auml;ev: </label></td>
+							<td><input type="date" id="kuupaev" name="vpiltkuupaev"/></td>
+						<tr>
+							<td><label for="kommentaar">Lisa kirjeldus: </label></td>
+							<td><textarea id="kommentaar" name="kommentaar" cols="30" rows="5" placeholder="Miks sa pilti muutsid?"></textarea></td>
+						</tr>
+					</table>
+					<input type="submit" value="Muuda pilt!"/>
+				</form>
