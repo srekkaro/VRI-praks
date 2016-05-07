@@ -18,4 +18,4 @@ Galerii on nähtav aadressil: http://enos.itcollege.ee/~srekkaro/gallery.html
 
 2016-04-28 Lisasin 11. praktikum lahendused MySQL päringutega tekstifaili kujul.
 
-2016-05-07 Lisasin 12.praktikumi lahendused. View kaustas on uus täiendav piltide muutmise vaate fail. Galerii kuvamine toimub MySQL andmebaasis oleva info alusel (muudatus controller.phps, gallergy.html'is ja functions.php-s). Täiendasin lehte piltide muutmise vormiga. Vormi nägemiseks peaks olema sisselogitud ning Get parameeter mode=muuda ja get parameeter id peab olema samal ajal vahemikus 8 - 13.
+2016-05-07 Lisasin 12.praktikumi lahendused. View kaustas on uus täiendav piltide muutmise vaate fail. Galerii kuvamine toimub MySQL andmebaasis oleva info alusel (muudatus controller.phps, gallergy.html'is ja functions.php-s). Täiendasin lehte piltide muutmise vormiga. Vormi nägemiseks peaks olema sisselogitud ning Get parameeter mode=muuda ja get parameeter id peab olema samal ajal vahemikus 8 - 13. Leht on nähtav aadressil: http://enos.itcollege.ee/~srekkaro/controller.php
