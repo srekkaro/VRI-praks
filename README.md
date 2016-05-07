@@ -14,6 +14,8 @@ Galerii on nähtav aadressil: http://enos.itcollege.ee/~srekkaro/gallery.html
 
 2016-04-14 Tekitasin eraldi functions.php faili, mille abil avatakse erinevad vaated. Täiendasin controller.php ja login.html faile. Galerii on nähtav: http://enos.itcollege.ee/~srekkaro/controller.php
 
-2016-04-22 Täiendasin praktikumi lehte sisselogimise funktsionaalsusega. Täiendaisn functions.php, controller.php, gallery.html, login.html ha head.html faile. Galerii on nähtav: http://enos.itcollege.ee/~srekkaro/controller.php
+2016-04-22 Täiendasin praktikumi lehte sisselogimise funktsionaalsusega. Täiendasin functions.php, controller.php, gallery.html, login.html ha head.html faile. Galerii on nähtav: http://enos.itcollege.ee/~srekkaro/controller.php
 
 2016-04-28 Lisasin 11. praktikum lahendused MySQL päringutega tekstifaili kujul.
+
+2016-05-07 Lisasin 12.praktikumi lahendused. View kaustas on uus täiendav piltide muutmise vaate fail. Galerii kuvamine toimub MySQL andmebaasis oleva info alusel (muudatus controller.phps, gallergy.html'is ja functions.php-s). Täiendasin lehte piltide muutmise vormiga. Vormi nägemiseks peaks olema sisselogitud ning Get parameeter mode=muuda ja id peab olema vahemikus 8 - 13.
